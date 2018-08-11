@@ -3,6 +3,7 @@
   height: 80px;
   color:#eaeaea;
   position: fixed;
+  z-index: 999;
   font-family: 'Josefin Sans', sans-serif;
 }
 
