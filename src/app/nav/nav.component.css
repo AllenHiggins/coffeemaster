@@ -1,0 +1,56 @@
+.navtop{
+  background: rgba(20, 2, 0, 0.8);
+  height: 80px;
+  color:#eaeaea;
+  position: fixed;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.navtop img{
+  width: 122px;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+.stickynav,
+.opentimes{
+  display: inline-flex;
+  position: absolute;
+  right: 85px;
+  list-style: none;
+}
+
+.opentimes{
+  top: 10px;
+  font-size: 14px;
+}
+.stickynav{
+  padding: 5px;
+  top: 35px;
+  font-size: 12px;
+}
+
+.opentimes li:last-child,
+.stickynav li:last-child {
+  padding-right: 0;
+}
+
+.opentimes li,
+.stickynav li {
+  padding-right: 20px;
+}
+
+.stickynav li a{
+  color:#eaeaea;
+  text-decoration: none;
+}
+
+.stickynav li a:hover {
+  cursor: pointer;
+}
+
+.stickynav li a.active{
+  border-bottom: 1px solid #eaeaea;
+}
+
