@@ -1,0 +1,34 @@
+.cardContent{
+  width: 80%;
+  box-shadow: 0px 12px 27px #8080804a;
+  display: block;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 2em;
+  border-radius: 5px;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.title, p{
+  padding-top: 20px;
+  width: 80%;
+  display: block;
+  margin: auto;
+}
+
+.price{
+  float: right;
+  color: #b68834 !important;
+}
+
+p{
+  padding-bottom: 20px;
+  color: #777777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
+  font-family: "Poppins", sans-serif;
+}
