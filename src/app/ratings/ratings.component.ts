@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Review } from '../../assets/Models/review.Model';
 import { ReviewService } from '../Services/review.service';
+import { StatsService } from '../Services/stats.service';
 
 @Component({
   selector: 'app-ratings',
@@ -9,10 +10,15 @@ import { ReviewService } from '../Services/review.service';
 })
 export class RatingsComponent implements OnInit {
   reviews: Review[] = [];
-  constructor(private reviewsService: ReviewService) { }
+  stats = {};
+  constructor(
+    private reviewsService: ReviewService,
+    private statsService: StatsService) { }
 
   ngOnInit() {
     this.reviews = this.reviewsService.getReviews();
+    this.stats = this.statsService.getStats();
+    console.log(this.stats['cupsOfCoffee']);
   }
 
 }

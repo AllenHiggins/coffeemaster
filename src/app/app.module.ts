@@ -12,8 +12,9 @@ import { ImagesComponent } from './images/images.component';
 import { RatingsComponent } from './ratings/ratings.component';
 import { ReviewComponent } from './ratings/review/review.component';
 import { ReviewService } from './Services/review.service';
-import { NumberCounterComponent } from './number-counter/number-counter.component';
 import { StarsComponent } from './stars/stars.component';
+import { StatsService } from './Services/stats.service';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -26,13 +27,13 @@ import { StarsComponent } from './stars/stars.component';
     ImagesComponent,
     RatingsComponent,
     ReviewComponent,
-    NumberCounterComponent,
-    StarsComponent
+    StarsComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [CardService, ReviewService],
+  providers: [CardService, ReviewService, StatsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
