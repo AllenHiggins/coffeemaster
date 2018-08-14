@@ -1,0 +1,19 @@
+<section id="ratings">
+  <h1>What kind of Coffee we serve for you</h1>
+  <h6>Who are in extremely love with eco friendly system.</h6>
+  <div class="row review">
+    <div class="col-lg-6" *ngFor="let review of reviews">
+      <app-review
+        reviewLogo={{review.logo}}
+        reviewTitle={{review.title}}
+        reviewText={{review.text}}
+        reviewRating={{review.rating}}
+      ></app-review>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4" >
+      <app-number-counter></app-number-counter>
+    </div>
+  </div>
+</section>

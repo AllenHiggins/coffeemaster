@@ -10,6 +10,7 @@
 
 .title{
   font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .title, p{
@@ -17,11 +18,13 @@
   width: 80%;
   display: block;
   margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .price{
   float: right;
   color: #b68834 !important;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 p{
@@ -30,5 +33,4 @@ p{
   font-size: 14px;
   font-weight: 300;
   line-height: 1.625em;
-  font-family: "Poppins", sans-serif;
 }
