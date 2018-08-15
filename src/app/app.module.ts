@@ -17,6 +17,7 @@ import { StatsService } from './Services/stats.service';
 import { StatsComponent } from './stats/stats.component';
 import { ServeforyouComponent } from './serveforyou/serveforyou.component';
 import { ServecardComponent } from './serveforyou/servecard/servecard.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ServecardComponent } from './serveforyou/servecard/servecard.component'
     StarsComponent,
     StatsComponent,
     ServeforyouComponent,
-    ServecardComponent
+    ServecardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
