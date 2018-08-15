@@ -15,6 +15,8 @@ import { ReviewService } from './Services/review.service';
 import { StarsComponent } from './stars/stars.component';
 import { StatsService } from './Services/stats.service';
 import { StatsComponent } from './stats/stats.component';
+import { ServeforyouComponent } from './serveforyou/serveforyou.component';
+import { ServecardComponent } from './serveforyou/servecard/servecard.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { StatsComponent } from './stats/stats.component';
     RatingsComponent,
     ReviewComponent,
     StarsComponent,
-    StatsComponent
+    StatsComponent,
+    ServeforyouComponent,
+    ServecardComponent
   ],
   imports: [
     BrowserModule
