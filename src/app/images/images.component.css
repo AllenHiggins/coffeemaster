@@ -19,3 +19,12 @@ img{
   margin: auto;
   padding-bottom: 2em;
 }
+
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+  img{
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+}

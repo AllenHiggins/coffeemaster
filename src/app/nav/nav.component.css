@@ -55,3 +55,20 @@
   border-bottom: 1px solid #eaeaea;
 }
 
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+
+  .navtop img{
+    left: 50px;
+    width: 100px;
+  }
+}
+
+/* devices from small to labtop */
+@media only screen and (max-width: 600px) {
+  .navtop img{
+    left: 10px;
+    width: 90px;
+  }
+
+}

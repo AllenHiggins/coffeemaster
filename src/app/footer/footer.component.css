@@ -35,3 +35,57 @@ a{
   color: #b68834;
   text-decoration: none;
 }
+
+ul{
+  margin-top: -20px;
+}
+
+ul li{
+  display: inline;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+ul li:last-child{
+  padding-right: 0px;
+}
+
+#form button{
+  background-color: #b68834;
+  border: 2px solid #b68834;
+  outline: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  box-shadow: -1px 0px 0px white;
+}
+
+ul li:hover,
+#form button:hover{
+  cursor: pointer;
+}
+
+#form input:focus,
+#form button:active{
+  outline: 4px solid #347cb661;
+}
+
+#form input{
+  outline: none;
+  padding: 5px;
+  width: 80%;
+}
+
+#form .error{
+  font-size: 12px;
+  color: red;
+  padding-top: 4em;
+}
+
+/* devices from small to labtop */
+@media only screen and (min-width: 0px) and (max-width: 991px) {
+
+  #footer{
+    background-position-x: -1140px;
+  }
+
+}
