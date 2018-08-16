@@ -1,6 +1,6 @@
 <div class="container-fluid navtop">
   <img src="assets/images/logo.png" >
-  <nav>
+  <nav [ngClass]="{'slideIn': open, 'slideOut': !open}">
     <ul class="opentimes">
       <li>Mon-Fri:8am to 2pm</li>
       <li>Sat-Sun:11am to 4pm</li>
@@ -8,20 +8,26 @@
     </ul>
     <ul class="stickynav">
       <li>
-        <a class="active" >{{'home' | uppercase}}</a>
+        <a href="#" class="active" (click)="toggleClass()">{{'home' | uppercase}}</a>
       </li>
       <li>
-        <a href="#">{{'about' | uppercase}}</a>
+        <a href="#" (click)="toggleClass()">{{'about' | uppercase}}</a>
       </li>
       <li>
-        <a href="#">{{'review' | uppercase}}</a>
+        <a href="#" (click)="toggleClass()">{{'review' | uppercase}}</a>
       </li>
       <li>
-        <a href="#">{{'Blog' | uppercase}}</a>
+        <a href="#" (click)="toggleClass()">{{'Blog' | uppercase}}</a>
       </li>
       <li>
-        <a href="#">{{'pages' | uppercase}}</a>
+        <a href="#" (click)="toggleClass()">{{'pages' | uppercase}}</a>
       </li>
     </ul>
   </nav>
+  <div class="mobileIcon" [ngClass]="{'slideOver': open}">
+    <div id="toggleClose" (click)="toggleClass()">
+      <i *ngIf="open" class="fas fa-times"></i>
+      <i *ngIf="!open" class="fas fa-bars"></i>
+    </div>
+  </div>
 </div>

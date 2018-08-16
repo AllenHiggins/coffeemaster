@@ -22,9 +22,11 @@ h1{
   font-weight: bold;
 }
 
-
 /* devices from small to labtop */
-@media only screen and (min-width: 0px) and (max-width: 991px) {
+@media only screen and (min-width: 0px) and (max-width: 800px) {
+  .bodyOpen{
+    margin: 0; height: 100%; overflow: hidden;
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
