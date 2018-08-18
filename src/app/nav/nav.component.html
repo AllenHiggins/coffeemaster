@@ -1,4 +1,4 @@
-<div class="container-fluid navtop">
+<div class="container-fluid navtop" [ngClass]="{'navShowFull': addNavClass}">
   <img src="assets/images/logo.png" >
   <nav [ngClass]="{'slideIn': open, 'slideOut': !open}">
     <ul class="opentimes">
@@ -8,16 +8,16 @@
     </ul>
     <ul class="stickynav">
       <li>
-        <a href="#" class="active" (click)="toggleClass()">{{'home' | uppercase}}</a>
+        <a href="#header" class="active" (click)="toggleClass()">{{'home' | uppercase}}</a>
       </li>
       <li>
-        <a href="#" (click)="toggleClass()">{{'about' | uppercase}}</a>
+        <a href="#aboutSection" (click)="toggleClass()">{{'about' | uppercase}}</a>
       </li>
       <li>
-        <a href="#" (click)="toggleClass()">{{'review' | uppercase}}</a>
+        <a href="#ratings" (click)="toggleClass()">{{'review' | uppercase}}</a>
       </li>
       <li>
-        <a href="#" (click)="toggleClass()">{{'Blog' | uppercase}}</a>
+        <a href="#serveforyou" (click)="toggleClass()">{{'Blog' | uppercase}}</a>
       </li>
       <li>
         <a href="#" (click)="toggleClass()">{{'pages' | uppercase}}</a>

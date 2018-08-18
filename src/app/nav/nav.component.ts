@@ -6,12 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  open: boolean;
+  open = false;
+  addNavClass = false;
 
   constructor() { }
 
   ngOnInit() {
-    this.open = false;
+    this.navToggle();
   }
 
   toggleClass() {
@@ -21,6 +22,16 @@ export class NavComponent implements OnInit {
     } else {
       document.body.className = '';
     }
+  }
+
+  navToggle() {
+    window.addEventListener('scroll', () => {
+      if (scrollY.valueOf() > 50) {
+        this.addNavClass = true;
+      } else {
+        this.addNavClass = false;
+      }
+    });
   }
 
 }

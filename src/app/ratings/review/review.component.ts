@@ -13,10 +13,10 @@ export class ReviewComponent implements OnInit {
   @Input() reviewLogo: string;
   @Input() reviewRating: number;
 
+
   constructor() { }
 
   ngOnInit() {
-
   }
 
 }

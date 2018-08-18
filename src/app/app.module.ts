@@ -18,6 +18,7 @@ import { StatsComponent } from './stats/stats.component';
 import { ServeforyouComponent } from './serveforyou/serveforyou.component';
 import { ServecardComponent } from './serveforyou/servecard/servecard.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, ReactiveFormsModule
   ],
   providers: [CardService, ReviewService, StatsService],
   bootstrap: [AppComponent]

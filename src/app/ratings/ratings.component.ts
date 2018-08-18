@@ -18,7 +18,5 @@ export class RatingsComponent implements OnInit {
   ngOnInit() {
     this.reviews = this.reviewsService.getReviews();
     this.stats = this.statsService.getStats();
-    console.log(this.stats['cupsOfCoffee']);
   }
-
 }

@@ -50,7 +50,7 @@ ul li:last-child{
   padding-right: 0px;
 }
 
-#form button{
+button{
   background-color: #b68834;
   border: 2px solid #b68834;
   outline: none;
@@ -60,25 +60,39 @@ ul li:last-child{
 }
 
 ul li:hover,
-#form button:hover{
+button:hover{
   cursor: pointer;
 }
 
-#form input:focus,
-#form button:active{
+input:focus,
+button:active{
   outline: 4px solid #347cb661;
 }
 
-#form input{
+input{
   outline: none;
   padding: 5px;
   width: 80%;
+  color: #777;
 }
 
-#form .error{
+.error, .submitting{
   font-size: 12px;
+  padding-top: 3em;
+}
+
+.error{
   color: red;
-  padding-top: 4em;
+}
+
+.success{
+  font-size: 12px;
+  color: green;
+  position: absolute;
+}
+
+.follow{
+  padding-top:2em;
 }
 
 /* devices from small to labtop */
